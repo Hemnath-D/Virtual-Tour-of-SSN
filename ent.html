@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SSN Entrance</title>
+    <script type="text/javascript" charset="utf-8" src="https://cdn.rawgit.com/thiagopnts/kaleidoscope/master/dist/kaleidoscope.min.js"> </script>
+</head>
+<body>
+    <div id="container360"></div>
+    <script type="text/javascript" charset="utf-8">
+(function() {
+    var viewer = new Kaleidoscope.Image({
+        source: 'https://2.bp.blogspot.com/-HseU6uWhtl4/W7RvH5FroXI/AAAAAAAAAJg/moVpXBOa9xQifKfJtAgffrouRTOmBYDIACLcBGAs/s1600/ent.jpg',
+        containerId: '#container360',
+        height: window.innerHeight,
+        width: window.innerWidth,
+    });
+    viewer.render();
+    window.onresize = function() {
+        viewer.setSize({height: window.innerHeight, width: window.innerWidth});
+    };
+})();
+    </script>
+</body>
+</html>
